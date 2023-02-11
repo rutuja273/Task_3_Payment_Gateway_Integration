@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spreading Smiles</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="x.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h3 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #000000;
+  line-height: 1.8;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url('back1.jpeg');
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("back2.jpeg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("back3.jpeg");
+  min-height: 400px;
+}
+
+.x-wide {letter-spacing: 10px;}
+.x-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="x-top">
+  <div class="x-bar" id="myNavbar">
+    <a class="x-bar-item x-button x-hover-black x-hide-medium x-hide-large x-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="x-bar-item x-button">HOME</a>
+    <a href="#about" class="x-bar-item x-button x-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#project" class="x-bar-item x-button x-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#contact" class="x-bar-item x-button x-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="x-bar-block x-white x-hide x-hide-large x-hide-medium">
+    <a href="#about" class="x-bar-item x-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#project" class="x-bar-item x-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#contact" class="x-bar-item x-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 x-display-container x-opacity-min" id="home">
+  <div class="x-display-middle" style="white-space:nowrap;">
+    <span class="x-center x-padding-large x-black x-xlarge x-wide x-animate-opacity">(:SPREADING <span class="x-hide-small">SMILES</span>:)</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="x-content x-container x-padding-64" id="about">
+  <a href="https://rzp.io/l/NY6O6oxYpd" class="x-center x-display-middle x-button x-padding-large x-red" style="margin-top:64px">DONATE</a>
+  <h3 class="x-center x-padding-64">ABOUT US</h3>
+  <p class="x-center"><em>We work for children in India</em></p>
+  <p>Smile Foundation is to empower underprivileged children relevant education, innovative 
+    healthcare and market-focused livelihood programmes. Smile Foundation is to deploy best 
+    possible methodology and technology for achieving ideal SROI (social return on investment),
+     to practice and promote good governance. To link business competitiveness of the corporate
+      with social development initiatives; also to sensitize privileged children, 
+      youth and citizens in general to promote Civic Driven Change.</p>
+  <div class="x-row">
+    <div class="x-col m6 x-center x-padding-large">
+      <p><b><i class="fa fa-user x-margin-right"></i>Our Team</b></p><br>
+      <img src="team.jpeg" class="x-round x-image x-opacity x-hover-opacity-off" alt="Photo of Us" width="400" height="400">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="x-col m6 x-hide-small x-padding-large">
+      <p>While our focus as a development organisation has been first and foremost to work on 
+        the ground for bringing positive change in the lives of the less privileged children 
+        and families, we have been making equal efforts to sustain this change, by sensitising 
+        and engaging the privileged masses towards their social responsibility. Not remaining 
+        restricted to the community, and with the aim of achieving sustainable development in 
+        a wider social context, Smile Foundation has adopted the principle of Civic Driven 
+        Change, making the civil society an active partner in all its welfare initiatives.
+        We believe that education is both the means as well as the end to a better life: 
+        the means because it empowers an individual to earn his/her livelihood and the end 
+        because it increases one’s awareness on a range of issues – from healthcare to 
+        appropriate social behaviour to understanding one’s rights – and in the process help 
+        him/her evolve as a better citizen. Education is the most effective tool which helps 
+        children build a strong foundation; enabling them to free themselves from the vicious 
+        cycle of ignorance, poverty and disease.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="x-row x-center x-dark-grey x-padding-16">
+  <div class="x-quarter x-section">
+    <span class="x-xlarge">26+</span><br>
+    States
+  </div>
+  <div class="x-quarter x-section">
+    <span class="x-xlarge">400+</span><br>
+    Projects
+  </div>
+  <div class="x-quarter x-section">
+    <span class="x-xlarge">2000+</span><br>
+    Villages
+  </div>
+  <div class="x-quarter x-section">
+    <span class="x-xlarge">15,00,000+</span><br>
+    Happy Children And Families
+  </div>
+</div>
+
+<!-- Second Parallax Image with Project Text -->
+<div class="bgimg-2 x-display-container x-opacity-min">
+  <div class="x-display-middle">
+    <span class="x-xxlarge x-text-black x-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Project Section) -->
+<div class="x-content x-container x-padding-64" id="project">
+  <h3 class="x-center">CAMPAIGNS</h3>
+  <p class="x-center"><em>Here are some of our latest campaigns.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="x-row-padding x-center">
+    <div class="x-col m3">
+      <img src="c1.png" style="width:100%" onclick="onClick(this)" class="x-hover-opacity" alt="Tayyari Kal Ki">
+    </div>
+
+    <div class="x-col m3">
+      <img src="c2.png" style="width:100% ;height: 148px" onclick="onClick(this)" class="x-hover-opacity" alt="Shiksha Na Ruke">
+    </div>
+
+    <div class="x-col m3">
+      <img src="c3.png" style="width:100% ;height: 148px" onclick="onClick(this)" class="x-hover-opacity" alt="Health Can't Wait">
+    </div>
+
+    <div class="x-col m3">
+      <img src="c4.png" style="width:100% ;height: 148px" onclick="onClick(this)" class="x-hover-opacity" alt="She Can Fly">
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="x-modal x-black" onclick="this.style.display='none'">
+  <span class="x-button x-large x-black x-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="x-modal-content x-animate-zoom x-center x-transparent x-padding-64">
+    <img id="img01" class="x-image">
+    <p id="caption" class="x-opacity x-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Project Text -->
+<div class="bgimg-3 x-display-container x-opacity-min">
+  <div class="x-display-middle">
+     <span class="x-xxlarge x-text-dark-grey x-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="x-content x-container x-padding-64" id="contact">
+  <h3 class="x-center">GET IN TOUCH</h3>
+  <p class="x-center"><em>For Any Queries</em></p>
+
+  <div class="x-row x-padding-32 x-section">
+    <div class="x-col m4 x-container">
+      <img src="logo.jpeg" class="x-image x-round" style="width:50% ;height: 150px">
+    </div>
+    <div class="x-col m8 x-panel">
+      <div class="x-large x-margin-bottom">
+        <br>
+        <i class="fa fa-map-marker fa-fw x-hover-text-black x-xlarge x-margin-right"></i> Mumbai, Maharashtra<br>
+        <i class="fa fa-phone fa-fw x-hover-text-black x-xlarge x-margin-right"></i> Phone: +22 12312312<br>
+        <i class="fa fa-envelope fa-fw x-hover-text-black x-xlarge x-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="x-center x-black x-padding-64 x-opacity x-hover-opacity-off">
+  <a href="#home" class="x-button x-light-grey"><i class="fa fa-arrow-up x-margin-right"></i>To the top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "x-bar" + " x-card" + " x-animate-top" + " x-white";
+    } else {
+        navbar.className = navbar.className.replace(" x-card x-animate-top x-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("x-show") == -1) {
+        x.className += " x-show";
+    } else {
+        x.className = x.className.replace(" x-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
