@@ -8,7 +8,9 @@ Objectives of the project:
 -> Once the payment is done, an invoice will be generated, and an email will be sent to the user for the payment received. The invoice will contain the amount.
 
 Domain: Web and Mobile Development
+
 Task 3: Payment Gateway Integration
+
 Frontend: HTML, CSS
 
 Links:-
